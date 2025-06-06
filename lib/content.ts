@@ -240,6 +240,13 @@ export const content = {
           equipment: "210 iMacs",
           features: ["24/7 Access", "Industry Proximity", "Collaborative Spaces", "Modern Infrastructure"],
         },
+        rabat: {
+          name: "Rabat",
+          description: "Our newest campus in Rabat features 210 iMacs and is strategically located near offshoring companies, providing excellent industry connections.",
+          address: "Rabat, Morocco",
+          equipment: "210 iMacs",
+          features: ["24/7 Access", "Industry Proximity", "Collaborative Spaces", "Modern Infrastructure"],
+        },
       },
       gallery: {
         title: "Facility Gallery",
@@ -760,6 +767,13 @@ export const content = {
           equipment: "210 iMacs",
           features: ["Accès 24/7", "Proximité Industrielle", "Espaces Collaboratifs", "Infrastructure Moderne"],
         },
+        rabat: {
+          name: "Rabat",
+          description: "Notre campus le plus récent à Rabat dispose de 210 iMacs et est stratégiquement situé près des entreprises d'offshoring, offrant d'excellentes connexions industrielles.",
+          address: "Rabat, Maroc",
+          equipment: "210 iMacs",
+          features: ["Accès 24/7", "Proximité Industrielle", "Espaces Collaboratifs", "Infrastructure Moderne"],
+        },
       },
       gallery: {
         title: "Galerie des Installations",
@@ -1276,6 +1290,13 @@ export const content = {
           address: "تطوان، المغرب",
           equipment: "210 جهاز iMac",
           features: ["وصول 24/7", "قرب صناعي", "مساحات تعاونية", "بنية تحتية حديثة"],
+        },
+        rabat: {
+          name: "الرباط",
+          description: "حرمنا الجامعي الأول، الواقع في خريبكة، مجهز بـ 300 جهاز iMac ومرافق حديثة. يقع بالقرب من الدار البيضاء، مما يجعله سهل الوصول إليه.",
+          address: "الرباط، المغرب",
+          equipment: "300 جهاز iMac",
+          features: ["وصول 24/7", "مناطق الألعاب", "كافتيريا", "غرف الاجتماعات"],
         },
       },
       gallery: {

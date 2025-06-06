@@ -86,10 +86,10 @@ Our design follows a cyberpunk-inspired theme that reflects the innovative and c
 
 ## 👥 Team Members
 
-- [Your Name] - Frontend Developer
-- [Team Member 2] - UI/UX Designer
-- [Team Member 3] - Backend Developer
-- [Team Member 4] - Content Writer
+- [Ayoub Dev] - Fullstack Developer
+- [Mohamad Amine] - chi haja
+- [Yassin] - Lmohime rak kyn 
+
 
 ## 🎯 Project Goals
 
@@ -127,8 +127,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact
 
-- Project Link: [https://github.com/your-username/1337-portfolio](https://github.com/your-username/1337-portfolio)
-- Team Email: [your-email@example.com](mailto:your-email@example.com)
+- Project Link: [https://github.com/Web-Empire-Agency/1337-portfolio](https://github.com/Web-Empire-Agency/1337-portfolio)
+- Team Email: [ayoubmziandeveloepr@gmail.com](mailto:ayoubmziandeveloepr@gmail.com)
 
 ## 🎓 About 1337 School
 

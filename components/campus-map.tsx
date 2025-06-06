@@ -5,12 +5,22 @@ import { Button } from "@/components/ui/button"
 import { MapPin, Info, Clock, Monitor, Users } from "lucide-react"
 import { useLanguage } from "@/lib/language-context"
 
+// Add type definition for Campus
+interface Campus {
+  name: string
+  coordinates: { x: number; y: number }
+  description: string
+  address: string
+  equipment: string
+  features: string[]
+}
+
 export default function CampusMap() {
   const [activeCampus, setActiveCampus] = useState("khouribga")
   const mapRef = useRef<HTMLDivElement>(null)
   const { t } = useLanguage()
 
-  const campuses = {
+  const campuses: Record<string, Campus> = {
     khouribga: {
       name: t.campuses.locations.khouribga.name,
       coordinates: { x: 30, y: 40 },
@@ -34,6 +44,14 @@ export default function CampusMap() {
       address: t.campuses.locations.tetouan.address,
       equipment: t.campuses.locations.tetouan.equipment,
       features: t.campuses.locations.tetouan.features,
+    },
+    rabat: {
+      name: t.campuses.locations.rabat.name,
+      coordinates: { x: 50, y: 0 },
+      description: t.campuses.locations.rabat.description,
+      address: t.campuses.locations.rabat.address,
+      equipment: t.campuses.locations.rabat.equipment,
+      features: t.campuses.locations.rabat.features || [],
     },
   }
 
@@ -174,6 +192,26 @@ export default function CampusMap() {
                 strokeDasharray="5,5"
                 strokeOpacity="0.3"
               />
+              <line
+                x1={`${campuses.rabat.coordinates.x}%`}
+                y1={`${campuses.rabat.coordinates.y + 10}%`}
+                x2={`${campuses.khouribga.coordinates.x}%`}
+                y2={`${campuses.khouribga.coordinates.y}%`}
+                stroke="#00ff8c"
+                strokeWidth="1"
+                strokeDasharray="5,5"
+                strokeOpacity="0.3"
+              />
+              <line
+                x1={`${campuses.rabat.coordinates.x}%`}
+                y1={`${campuses.rabat.coordinates.y + 10}%`}
+                x2={`${campuses.tetouan.coordinates.x}%`}
+                y2={`${campuses.tetouan.coordinates.y}%`}
+                stroke="#00ff8c"
+                strokeWidth="1"
+                strokeDasharray="5,5"
+                strokeOpacity="0.3"
+              />
             </svg>
 
             {/* Campus Info Panel */}
@@ -215,10 +253,10 @@ export default function CampusMap() {
 
             {/* Terminal-style decorative elements */}
             <div className="absolute top-4 left-4 opacity-70">
-              <div className="font-mono text-xs text-primary">{"> map.render()"}</div>
+              <div className="font-mono text-xs text-primary">{" map.render()"}</div>
             </div>
             <div className="absolute top-4 right-4 opacity-70">
-              <div className="font-mono text-xs text-primary">{"> campuses.length: 3"}</div>
+              <div className="font-mono text-xs text-primary">{" campuses.length: 3"}</div>
             </div>
           </div>
         </div>
