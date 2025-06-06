@@ -1,0 +1,80 @@
+{
+    "concept": {
+        "en": {
+            "page_title": "Concept | 1337 Coding School",
+            "main_heading": "Concept",
+            "subheading": "Peer-Learning, A Perfectly Identified Educational Purpose",
+            "paragraph_1": "No professors, no classes… At 1337, you are in control of your learning. Thanks to peer learning, the school is open 24/7. You can come and go as you wish, any time of the day or night, including weekends and holidays.",
+            "paragraph_2": "You are responsible for your success and that of your peers. The entire learning path is hands-on and project-based. No traditional lectures where students lose focus every 10 minutes. Your progress is in your hands and those of your group.",
+            "paragraph_3": "Peer learning breaks down barriers between students and teachers. Only by combining our efforts can the training be truly successful.",
+            "section_heading_peer_learning": "Peer Learning",
+            "peer_learning_subheading": "A New Way of Acquiring Knowledge",
+            "paragraph_4": "The foundation of peer learning is collaborative work. Students must challenge, support, and learn from each other. As with any project, there will be doubts, questions, and moments of hesitation on the path to the desired outcome.",
+            "paragraph_5": "These questions will arise as you work with your group. They will push you forward and sharpen your skills—not through rote memorization of academic models, but through research, experimentation, and defending your ideas.",
+            "paragraph_6": "You need to be ready to embark on a journey of knowledge, share ideas with your peers, and not wait for teachers to hand you all the answers.",
+            "call_to_action_text": "Ready To Take The Challenge?",
+            "button_text": "Apply Now",
+            "button_link": "https://1337.school/apply"
+        },
+        "ar": {
+            "page_title": "المفهوم | مدرسة 1337 للبرمجة",
+            "main_heading": "المفهوم",
+            "subheading": "التعلم التعاوني، هدف تعليمي واضح",
+            "paragraph_1": "لا يوجد أساتذة ولا حصص دراسية… في 1337، أنت المسؤول عن تعلمك. بفضل نظام التعلم التعاوني، المدرسة مفتوحة على مدار الساعة وطوال أيام الأسبوع. يمكنك الحضور في أي وقت، سواء خلال النهار أو الليل، وحتى في عطلات نهاية الأسبوع والأعياد.",
+            "paragraph_2": "أنت مسؤول عن نجاحك ونجاح زملائك. يعتمد البرنامج بالكامل على الممارسة والمشاريع التطبيقية. لا توجد دروس تقليدية يُشتت فيها انتباه الطلاب كل بضع دقائق. التقدم بين يديك ويد فريقك.",
+            "paragraph_3": "يلغي التعلم التعاوني الحواجز بين الطلاب والأساتذة. النجاح في هذا التكوين لا يتحقق إلا من خلال التعاون والعمل الجماعي.",
+            "section_heading_peer_learning": "التعلم التعاوني",
+            "peer_learning_subheading": "طريقة جديدة لاكتساب المعرفة",
+            "paragraph_4": "يرتكز التعلم التعاوني على العمل الجماعي. يجب على الطلاب أن يتحدوا بعضهم البعض، ويتشاركوا المعرفة، ويتعلموا من بعضهم. وكما هو الحال في أي مشروع، ستواجهون التردد، والشكوك، والتساؤلات في طريقكم لتحقيق النتائج المرجوة.",
+            "paragraph_5": "هذه التساؤلات ستراودك أثناء العمل مع فريقك. وستدفعك إلى الأمام وتحسن مهاراتك — ليس من خلال تكرار النماذج الأكاديمية أو حفظها، بل عبر البحث والتجريب والدفاع عن أفكارك.",
+            "paragraph_6": "يجب أن تكون مستعدًا لخوض رحلة طلب المعرفة، ومشاركة الأفكار مع زملائك، دون انتظار إجابات جاهزة من المعلمين.",
+            "call_to_action_text": "هل أنت مستعد للتحدي؟",
+            "button_text": "قدّم الآن",
+            "button_link": "https://1337.school/apply"
+        }
+    },
+    "DNA": {
+        "en": {
+            "page_title": "DNA | 1337 Coding School",
+            "main_heading": "DNA",
+            "subheading": "The 1337 DNA",
+            "paragraph_1": "1337 is a coding school that trains the next generation of software engineers. Our unique approach combines peer learning, project-based learning, and a 24/7 open campus.",
+            "paragraph_2": "At 1337, we believe that the best way to learn is by doing. That's why our curriculum is entirely project-based. You'll work on real-world projects from day one, learning the skills you need to succeed in the industry.",
+            "paragraph_3": "Our peer learning model means you'll learn from your peers as much as you learn from the curriculum. You'll collaborate, challenge each other, and grow together.",
+            "section_heading_values": "Our Values",
+            "values_subheading": "What Makes Us Different",
+            "value_1_title": "Peer Learning",
+            "value_1_description": "Learn from your peers through collaboration and mutual support.",
+            "value_2_title": "Project-Based Learning",
+            "value_2_description": "Work on real projects that prepare you for the industry.",
+            "value_3_title": "24/7 Campus",
+            "value_3_description": "Access the campus anytime, day or night, to work on your projects.",
+            "value_4_title": "No Tuition",
+            "value_4_description": "Education is free at 1337. We believe in making quality education accessible to all.",
+            "call_to_action_text": "Join the 1337 Community",
+            "button_text": "Apply Now",
+            "button_link": "https://1337.school/apply"
+        },
+        "ar": {
+            "page_title": "الحمض النووي | مدرسة 1337 للبرمجة",
+            "main_heading": "الحمض النووي",
+            "subheading": "الحمض النووي لمدرسة 1337",
+            "paragraph_1": "1337 هي مدرسة برمجة تُدرب الجيل القادم من مهندسي البرمجيات. نهجنا الفريد يجمع بين التعلم التعاوني والتعلم القائم على المشاريع وحرم جامعي مفتوح على مدار الساعة.",
+            "paragraph_2": "في 1337، نؤمن بأن أفضل طريقة للتعلم هي من خلال الممارسة. لذلك، فإن مناهجنا تعتمد بالكامل على المشاريع. ستعمل على مشاريع واقعية من اليوم الأول، وتتعلم المهارات التي تحتاجها للنجاح في هذا المجال.",
+            "paragraph_3": "نموذج التعلم التعاوني لدينا يعني أنك ستتعلم من زملائك بقدر ما تتعلم من المنهج. ستتعاون، وتتحدى بعضكم البعض، وتنمو معًا.",
+            "section_heading_values": "قيمنا",
+            "values_subheading": "ما يجعلنا مختلفين",
+            "value_1_title": "التعلم التعاوني",
+            "value_1_description": "تعلم من زملائك من خلال التعاون والدعم المتبادل.",
+            "value_2_title": "التعلم القائم على المشاريع",
+            "value_2_description": "اعمل على مشاريع حقيقية تعدك للصناعة.",
+            "value_3_title": "حرم جامعي على مدار الساعة",
+            "value_3_description": "الوصول إلى الحرم الجامعي في أي وقت، نهارًا أو ليلاً، للعمل على مشاريعك.",
+            "value_4_title": "بدون رسوم دراسية",
+            "value_4_description": "التعليم مجاني في 1337. نحن نؤمن بجعل التعليم الجيد متاحًا للجميع.",
+            "call_to_action_text": "انضم إلى مجتمع 1337",
+            "button_text": "قدّم الآن",
+            "button_link": "https://1337.school/apply"
+        }
+    }
+}

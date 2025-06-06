@@ -1,26 +1,140 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* Base colors - Deeper, richer dark background */
+    --background: 230 25% 7%;          /* Darker, more sophisticated background */
+    --foreground: 210 40% 98%;         /* Clean white text */
+    
+    /* Card and popover - Subtle depth */
+    --card: 230 25% 8%;
+    --card-foreground: 210 40% 98%;
+    --popover: 230 25% 8%;
+    --popover-foreground: 210 40% 98%;
+    
+    /* Primary colors - Enhanced 1337 green */
+    --primary: 160 100% 60%;           /* Brighter, more vibrant green */
+    --primary-foreground: 230 25% 7%;  /* Dark background for contrast */
+    
+    /* Secondary colors - Subtle blue tint */
+    --secondary: 230 25% 12%;          /* Slightly lighter than background */
+    --secondary-foreground: 210 40% 98%;
+    
+    /* Muted colors - Softer, more elegant */
+    --muted: 230 25% 12%;
+    --muted-foreground: 215 20.2% 75.1%; /* Lighter muted text */
+    
+    /* Accent colors - Matching primary with variation */
+    --accent: 160 100% 55%;            /* Slightly softer than primary */
+    --accent-foreground: 230 25% 7%;
+    
+    /* Destructive colors - More visible red */
+    --destructive: 0 84% 60%;          /* Brighter red for better visibility */
+    --destructive-foreground: 210 40% 98%;
+    
+    /* Border and input - Subtle glow effect */
+    --border: 160 100% 50% / 0.2;      /* Semi-transparent green border */
+    --input: 230 25% 12%;
+    --ring: 160 100% 50% / 0.4;        /* Stronger green glow */
+    
+    /* Chart colors - Gradient of greens */
+    --chart-1: 160 100% 60%;           /* Brightest green */
+    --chart-2: 160 100% 50%;           /* Primary green */
+    --chart-3: 160 100% 40%;           /* Medium green */
+    --chart-4: 160 100% 30%;           /* Dark green */
+    --chart-5: 160 100% 20%;           /* Darkest green */
+  }
+
+  .dark {
+    /* Dark mode - Enhanced contrast and depth */
+    --background: 230 25% 5%;          /* Even darker background */
+    --foreground: 210 40% 98%;
+    
+    --card: 230 25% 6%;
+    --card-foreground: 210 40% 98%;
+    
+    --popover: 230 25% 6%;
+    --popover-foreground: 210 40% 98%;
+    
+    --primary: 160 100% 60%;
+    --primary-foreground: 230 25% 5%;
+    
+    --secondary: 230 25% 10%;
+    --secondary-foreground: 210 40% 98%;
+    
+    --muted: 230 25% 10%;
+    --muted-foreground: 215 20.2% 75.1%;
+    
+    --accent: 160 100% 55%;
+    --accent-foreground: 230 25% 5%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+    
+    --border: 160 100% 50% / 0.15;     /* More subtle border in dark mode */
+    --input: 230 25% 10%;
+    --ring: 160 100% 50% / 0.3;        /* Adjusted glow for dark mode */
+    
+    /* Dark mode chart colors - Adjusted for better visibility */
+    --chart-1: 160 100% 60%;
+    --chart-2: 160 100% 50%;
+    --chart-3: 160 100% 40%;
+    --chart-4: 160 100% 30%;
+    --chart-5: 160 100% 20%;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out forwards;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .terminal-glow {
+    box-shadow: 0 0 20px rgba(0, 255, 140, 0.4),
+                0 0 40px rgba(0, 255, 140, 0.2);
+  }
+
+  .neon-text {
+    text-shadow: 0 0 10px rgba(0, 255, 140, 0.7),
+                 0 0 20px rgba(0, 255, 140, 0.5);
+  }
+
+  .cyber-border {
+    border: 1px solid rgba(0, 255, 140, 0.3);
+    box-shadow: 0 0 15px rgba(0, 255, 140, 0.2);
+  }
 }
