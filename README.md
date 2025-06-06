@@ -1,37 +1,139 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 1337 School Portfolio Website
 
-## Getting Started
+A modern, interactive portfolio website for 1337 School in Morocco, built by a team of aspiring developers. This project showcases our journey and passion for coding while providing comprehensive information about the school's curriculum, campuses, and admission process.
 
-First, run the development server:
+## 🚀 Features
 
+- **Interactive Timeline**: Visual representation of the admission process
+- **Campus Gallery**: Explore different 1337 campuses
+- **Curriculum Overview**: Detailed view of the learning path
+- **Testimonials**: Success stories from current students
+- **Multi-language Support**: Available in multiple languages
+- **Dark Mode**: Cyberpunk-inspired dark theme
+- **Responsive Design**: Optimized for all devices
+- **Interactive Maps**: Campus locations and facilities
+- **Admission Process**: Step-by-step guide
+- **Skill Tree**: Visual representation of the curriculum
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js 14
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **UI Components**: Shadcn/ui
+- **Icons**: Lucide Icons
+- **Animations**: Framer Motion
+- **State Management**: React Context
+- **Internationalization**: Custom i18n solution
+
+## 🏗️ Project Structure
+```
+1337-portfolio/
+├── app/ # Next.js app directory
+│ ├── admissions/ # Admission process pages
+│ ├── campuses/ # Campus information
+│ ├── curriculum/ # Curriculum details
+│ └── testimonials/ # Student testimonials
+├── components/ # Reusable components
+│ ├── ui/ # UI components
+│ └── ... # Feature components
+├── lib/ # Utility functions
+├── public/ # Static assets
+└── styles/ # Global styles
+```
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18.x or later
+- npm or yarn
+- Git
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/your-username/1337-portfolio.git
+cd 1337-portfolio
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Run the development server:
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🎨 Design Philosophy
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Our design follows a cyberpunk-inspired theme that reflects the innovative and cutting-edge nature of 1337 School. Key design elements include:
 
-## Learn More
+- Neon green accents (#00ff8c)
+- Dark mode by default
+- Terminal-inspired typography
+- Glowing effects and animations
+- Minimalist and clean interface
 
-To learn more about Next.js, take a look at the following resources:
+## 👥 Team Members
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Your Name] - Frontend Developer
+- [Team Member 2] - UI/UX Designer
+- [Team Member 3] - Backend Developer
+- [Team Member 4] - Content Writer
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🎯 Project Goals
 
-## Deploy on Vercel
+1. Showcase our technical skills and understanding of modern web development
+2. Demonstrate our ability to work as a team
+3. Create an informative and engaging platform for prospective students
+4. Implement best practices in web development
+5. Learn and apply new technologies
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📝 Learning Journey
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# 1337-portfolio
+This project represents our learning journey and includes:
+
+- Modern web development practices
+- Team collaboration
+- Version control
+- Responsive design
+- Performance optimization
+- Accessibility standards
+
+## 🤝 Contributing
+
+We welcome contributions! Please feel free to submit a Pull Request.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- 1337 School for inspiration
+- The open-source community
+- Our mentors and peers
+- All contributors to the project
+
+## 📞 Contact
+
+- Project Link: [https://github.com/your-username/1337-portfolio](https://github.com/your-username/1337-portfolio)
+- Team Email: [your-email@example.com](mailto:your-email@example.com)
+
+## 🎓 About 1337 School
+
+1337 is a coding school in Morocco that offers a unique peer-to-peer learning methodology. The school focuses on practical coding skills and real-world projects, preparing students for careers in software development.
+
+---
+
+Made with ❤️ by aspiring 1337 students
