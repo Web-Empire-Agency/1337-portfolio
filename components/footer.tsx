@@ -25,6 +25,7 @@ export default function Footer() {
     { name: t.campuses.locations.khouribga.name, address: t.campuses.locations.khouribga.address },
     { name: t.campuses.locations.benguerir.name, address: t.campuses.locations.benguerir.address },
     { name: t.campuses.locations.tetouan.name, address: t.campuses.locations.tetouan.address },
+    { name: t.campuses.locations.rabat.name, address: t.campuses.locations.rabat.address },
   ]
 
   return (
@@ -91,17 +92,17 @@ export default function Footer() {
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-primary" />
-                <span className="text-text/70 text-sm">contact@1337.ma</span>
+                <span className="text-text/70 text-sm">AyoubMzianDeveloper@gmail.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-primary" />
-                <span className="text-text/70 text-sm">+212 XXX XXX XXX</span>
+                <span className="text-text/70 text-sm">+212 773473782</span>
               </div>
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-primary mt-0.5" />
                 <div className="text-text/70 text-sm">
                   <div>Khouribga, Ben Guerir,</div>
-                  <div>Tetouan, Morocco</div>
+                  <div>Tetouan, Rabat, Morocco</div>
                 </div>
               </div>
             </div>

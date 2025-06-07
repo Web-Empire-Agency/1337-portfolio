@@ -31,7 +31,7 @@ export default function CampusMap() {
     },
     benguerir: {
       name: t.campuses.locations.benguerir.name,
-      coordinates: { x: 50, y: 60 },
+      coordinates: { x: 50, y: 50 },
       description: t.campuses.locations.benguerir.description,
       address: t.campuses.locations.benguerir.address,
       equipment: t.campuses.locations.benguerir.equipment,
@@ -47,7 +47,7 @@ export default function CampusMap() {
     },
     rabat: {
       name: t.campuses.locations.rabat.name,
-      coordinates: { x: 50, y: 0 },
+      coordinates: { x: 50, y: 10 },
       description: t.campuses.locations.rabat.description,
       address: t.campuses.locations.rabat.address,
       equipment: t.campuses.locations.rabat.equipment,
@@ -101,7 +101,7 @@ export default function CampusMap() {
         <div className="mb-16">
           <div
             ref={mapRef}
-            className="relative h-[500px] bg-gradient-to-br from-[#0a192f] to-[#020c1b] rounded-3xl border border-bg-primary-20 overflow-hidden transition-transform duration-300 ease-out"
+            className="relative h-[800px] bg-gradient-to-br from-[#0a192f] to-[#020c1b] rounded-3xl border border-bg-primary-20 overflow-hidden transition-transform duration-300 ease-out"
           >
             {/* Map Background */}
             <div className="absolute inset-0 opacity-20">
@@ -163,7 +163,7 @@ export default function CampusMap() {
               xmlns="http://www.w3.org/2000/svg"
             >
               <line
-                x1={`${campuses.khouribga.coordinates.x}%`}
+                x1={`${campuses.khouribga.coordinates.x + 5}%`}
                 y1={`${campuses.khouribga.coordinates.y}%`}
                 x2={`${campuses.benguerir.coordinates.x}%`}
                 y2={`${campuses.benguerir.coordinates.y}%`}
@@ -185,7 +185,7 @@ export default function CampusMap() {
               <line
                 x1={`${campuses.tetouan.coordinates.x}%`}
                 y1={`${campuses.tetouan.coordinates.y}%`}
-                x2={`${campuses.khouribga.coordinates.x}%`}
+                x2={`${campuses.khouribga.coordinates.x + 5}%`}
                 y2={`${campuses.khouribga.coordinates.y}%`}
                 stroke="#00ff8c"
                 strokeWidth="1"
@@ -195,7 +195,7 @@ export default function CampusMap() {
               <line
                 x1={`${campuses.rabat.coordinates.x}%`}
                 y1={`${campuses.rabat.coordinates.y + 10}%`}
-                x2={`${campuses.khouribga.coordinates.x}%`}
+                x2={`${campuses.khouribga.coordinates.x + 5}%`}
                 y2={`${campuses.khouribga.coordinates.y}%`}
                 stroke="#00ff8c"
                 strokeWidth="1"
@@ -256,7 +256,7 @@ export default function CampusMap() {
               <div className="font-mono text-xs text-primary">{" map.render()"}</div>
             </div>
             <div className="absolute top-4 right-4 opacity-70">
-              <div className="font-mono text-xs text-primary">{" campuses.length: 3"}</div>
+              <div className="font-mono text-xs text-primary">{" campuses.length: 4"}</div>
             </div>
           </div>
         </div>

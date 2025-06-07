@@ -229,7 +229,7 @@ export const content = {
           description:
             "Located at Mohammed VI Polytechnic University in Ben Guerir, this campus offers a unique learning environment with modern facilities and a vibrant community.",
           address: "Mohammed VI Polytechnic University, Ben Guerir, Morocco",
-          equipment: "Multiple iMacs",
+          equipment: "300 iMacs",
           features: ["24/7 Access", "University Integration", "Research Facilities", "Innovation Hub"],
         },
         tetouan: {
@@ -244,7 +244,7 @@ export const content = {
           name: "Rabat",
           description: "Our newest campus in Rabat features 210 iMacs and is strategically located near offshoring companies, providing excellent industry connections.",
           address: "Rabat, Morocco",
-          equipment: "210 iMacs",
+          equipment: "260 iMacs",
           features: ["24/7 Access", "Industry Proximity", "Collaborative Spaces", "Modern Infrastructure"],
         },
       },
@@ -281,7 +281,7 @@ export const content = {
         strategic: {
           title: "Strategic Locations",
           description:
-            "Campuses strategically located across Morocco in Khouribga, Ben Guerir, and Tétouan, providing accessibility to students nationwide.",
+            "Campuses strategically located across Morocco in Khouribga, Ben Guerir, Tétouan, and Rabat, providing accessibility to students nationwide.",
         },
       },
       accessNote: "All campuses are open 24/7",
@@ -506,7 +506,7 @@ export const content = {
       quickLinks: "Quick Links",
       campuses: "Our Campuses",
       contact: "Get In Touch",
-      copyright: "1337 Coding School. All rights reserved.",
+      copyright: "made by AyoubDev, Mohammed Amine, Yssin.",
       privacy: "Privacy Policy",
       terms: "Terms of Service",
       systemStatus: "> system.status: online",
@@ -808,7 +808,7 @@ export const content = {
         strategic: {
           title: "Emplacements Stratégiques",
           description:
-            "Campus stratégiquement situés à travers le Maroc à Khouribga, Ben Guerir et Tétouan, offrant une accessibilité aux étudiants de tout le pays.",
+            "Campus stratégiquement situés à travers le Maroc à Khouribga, Ben Guerir, Tétouan et Rabat, offrant une accessibilité aux étudiants de tout le pays.",
         },
       },
       accessNote: "Tous les campus sont ouverts 24/7",
@@ -1566,6 +1566,9 @@ export const content = {
   },
 }
 
+export const imacsCount = +parseInt(content.en.campuses.locations.khouribga.equipment.split(" ")[0]) + parseInt(content.en.campuses.locations.benguerir.equipment.split(" ")[0]) + parseInt(content.en.campuses.locations.tetouan.equipment.split(" ")[0]) + parseInt(content.en.campuses.locations.rabat.equipment.split(" ")[0])
+
 export function getContent(lang: Language) {
   return content[lang] || content.en
 }
+

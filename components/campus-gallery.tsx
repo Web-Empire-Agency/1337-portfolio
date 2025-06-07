@@ -4,6 +4,8 @@ import { useState, useRef } from "react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useLanguage } from "@/lib/language-context"
+import { khouribga1, khouribga2, khouribga3, rabat, rabat2, rabat3, tetouan, tetouan2, tetouan3, tetouan4, benguerir1, benguerir2, benguerir3, benguerir4, benguerir5 } from "@/lib/images"
+import { imacsCount } from "@/lib/content"
 
 export default function CampusGallery() {
   const [activeTab, setActiveTab] = useState("khouribga")
@@ -13,69 +15,86 @@ export default function CampusGallery() {
   const campusImages = {
     khouribga: [
       {
-        src: "/placeholder.svg?height=600&width=800",
+        src: khouribga1.src,
         alt: "Khouribga Campus Main Hall",
         caption: "Main Hall with 300 iMacs",
       },
       {
-        src: "/placeholder.svg?height=600&width=800",
+        src: khouribga2.src,
         alt: "Khouribga Campus Collaboration Space",
         caption: "Collaboration Space",
       },
       {
-        src: "/placeholder.svg?height=600&width=800",
+        src: khouribga3.src,
         alt: "Khouribga Campus Cafeteria",
         caption: "Campus Cafeteria",
-      },
-      {
-        src: "/placeholder.svg?height=600&width=800",
-        alt: "Khouribga Campus Gaming Area",
-        caption: "Gaming and Recreation Area",
-      },
+      }
     ],
     benguerir: [
       {
-        src: "/placeholder.svg?height=600&width=800",
+        src: benguerir1.src,
         alt: "Ben Guerir Campus Exterior",
         caption: "Mohammed VI Polytechnic University Campus",
       },
       {
-        src: "/placeholder.svg?height=600&width=800",
+        src: benguerir2.src,
         alt: "Ben Guerir Campus Workstations",
         caption: "Student Workstations",
       },
       {
-        src: "/placeholder.svg?height=600&width=800",
+        src: benguerir3.src,
         alt: "Ben Guerir Campus Meeting Room",
         caption: "Meeting and Project Rooms",
       },
       {
-        src: "/placeholder.svg?height=600&width=800",
+        src: benguerir4.src,
         alt: "Ben Guerir Campus Lounge",
         caption: "Student Lounge",
+      },
+      {
+        src: benguerir5.src,
+        alt: "Ben Guerir Campus View",
+        caption: "Campus View",
       },
     ],
     tetouan: [
       {
-        src: "/placeholder.svg?height=600&width=800",
+        src: tetouan.src,
         alt: "Tétouan Campus Entrance",
         caption: "Med Campus Entrance",
       },
       {
-        src: "/placeholder.svg?height=600&width=800",
+        src: tetouan2.src,
         alt: "Tétouan Campus Lab",
         caption: "Computer Lab with 210 iMacs",
       },
       {
-        src: "/placeholder.svg?height=600&width=800",
+        src: tetouan3.src,
         alt: "Tétouan Campus Breakout Area",
         caption: "Breakout and Brainstorming Area",
       },
       {
-        src: "/placeholder.svg?height=600&width=800",
+        src: tetouan4.src,
         alt: "Tétouan Campus View",
         caption: "Campus View",
       },
+    ],
+    rabat: [
+      {
+        src: rabat.src,
+        alt: "Rabat Campus Main Hall",
+        caption: "Main Hall with 210 iMacs",
+      },
+      {
+        src: rabat2.src,
+        alt: "Rabat Campus View",
+        caption: "Campus View",
+      },
+      {
+        src: rabat3.src,
+        alt: "Rabat Campus View",
+        caption: "Campus View",
+      }
     ],
   }
 
@@ -119,7 +138,7 @@ export default function CampusGallery() {
 
         {/* Gallery */}
         <div className="relative">
-          <div className="relative overflow-hidden rounded-2xl border border-bg-primary-20" style={{ height: "500px" }}>
+          <div className="relative overflow-hidden rounded-2xl border border-bg-primary-20" style={{ height: "630px" }}>
             {/* Gallery Navigation */}
             <Button
               variant="outline"
@@ -222,7 +241,7 @@ export default function CampusGallery() {
           <div className="bg-gradient-to-br from-[#0a192f]/80 to-[#020c1b]/80 backdrop-blur-sm rounded-2xl border border-bg-primary-20 p-6 hover:border-bg-primary-40 transition-colors">
             <div className="text-center space-y-4">
               <div className="inline-flex items-center justify-center w-16 h-16 bg-bg-primary-10 rounded-full border border-bg-primary-30">
-                <div className="text-2xl font-mono font-bold text-primary">810+</div>
+                <div className="text-2xl font-mono font-bold text-primary">{imacsCount}</div>
               </div>
               <h3 className="text-xl font-mono font-semibold text-text">iMacs</h3>
               <p className="text-text/70 text-sm leading-relaxed">{t.campuses.overview.equipment.description}</p>
@@ -232,7 +251,7 @@ export default function CampusGallery() {
           <div className="bg-gradient-to-br from-[#0a192f]/80 to-[#020c1b]/80 backdrop-blur-sm rounded-2xl border border-bg-primary-20 p-6 hover:border-bg-primary-40 transition-colors">
             <div className="text-center space-y-4">
               <div className="inline-flex items-center justify-center w-16 h-16 bg-bg-primary-10 rounded-full border border-bg-primary-30">
-                <div className="text-2xl font-mono font-bold text-primary">3</div>
+                <div className="text-2xl font-mono font-bold text-primary">4</div>
               </div>
               <h3 className="text-xl font-mono font-semibold text-text">{t.campuses.overview.strategic.title}</h3>
               <p className="text-text/70 text-sm leading-relaxed">{t.campuses.overview.strategic.description}</p>
