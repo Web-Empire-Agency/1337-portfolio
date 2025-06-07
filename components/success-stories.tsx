@@ -12,76 +12,52 @@ export default function SuccessStories() {
   const successStories = [
     {
       id: 1,
-      name: "Omar Benali",
-      title: "Senior Software Engineer",
-      company: "Microsoft",
+      name: "Oumaima Essayeh",
+      title: "Software Engineer",
+      company: "Agile Solutions",
       category: "career",
-      story:
-        "After graduating from 1337, Omar joined Microsoft as a software engineer. His project-based learning experience and problem-solving skills made him stand out during the interview process.",
+      story: "Transitioned from 1337 to professional software engineering, crediting peer-learning methodology for developing real-world problem-solving abilities and collaborative skills essential in tech teams.",
       image: "/placeholder.svg?height=300&width=300",
-      achievement: "Promoted to Senior Engineer in 18 months",
-      skills: ["C++", "System Design", "Cloud Computing"],
+      achievement: "Featured alumni spotlight for technical excellence",
+      skills: ["Full-stack Development", "Team Collaboration", "Agile Methodologies"],
+      source: "https://x.com/1337FIL/status/1925206301161791932"
     },
     {
       id: 2,
-      name: "Aicha Mansouri",
-      title: "Cybersecurity Entrepreneur",
-      company: "SecureNet Morocco",
-      category: "startup",
-      story:
-        "Aicha founded her own cybersecurity startup after discovering her passion during the security projects at 1337. Her company now protects over 100 Moroccan businesses.",
+      name: "Jamal Chadi",
+      title: "Full-Stack Developer",
+      company: "VO2 Group",
+      category: "career",
+      story: "Leveraged 1337's project-based curriculum to master full-stack development, now creating enterprise solutions at VO2 Group with focus on scalable web applications.",
       image: "/placeholder.svg?height=300&width=300",
-      achievement: "Founded successful cybersecurity startup",
-      skills: ["Security", "Network Admin", "Business Development"],
+      achievement: "Key contributor to VO2 Group's e-commerce platform redesign",
+      skills: ["JavaScript", "React", "Node.js", "API Design"],
+      source: "https://x.com/1337FIL/status/1899444666581373069"
     },
     {
       id: 3,
-      name: "Youssef Alami",
-      title: "Full Stack Developer",
-      company: "Careem",
+      name: "Youssef Baddi",
+      title: "DevOps Engineer",
+      company: "Google",
       category: "career",
-      story:
-        "From zero coding experience to full stack developer at Careem. Youssef's journey through 1337's peer learning model prepared him for the fast-paced tech industry.",
+      story: "Transformed gaming passion into cloud infrastructure expertise through 1337's flexible learning model. Developed critical monitoring systems at Google Cloud after mastering Linux and automation during studies.",
       image: "/placeholder.svg?height=300&width=300",
-      achievement: "Lead developer on major mobile features",
-      skills: ["React", "Node.js", "Mobile Development"],
+      achievement: "Implemented cost-saving infrastructure monitoring solution",
+      skills: ["Cloud Infrastructure", "Linux", "Automation", "Containerization"],
+      source: "https://youtu.be/J7rAK2Ds6wU"
     },
     {
       id: 4,
-      name: "Salma Idrissi",
-      title: "AI Research Intern",
-      company: "Google Research",
+      name: "Mehdi El Gaham",
+      title: "AI Research Engineer",
+      company: "DeepMind",
       category: "research",
-      story:
-        "Salma's work on the Gomoku AI project at 1337 caught the attention of Google Research. She's now contributing to cutting-edge machine learning research.",
+      story: "Applied 1337's competitive programming experience to advance machine learning research. Contributes to natural language processing breakthroughs at DeepMind, focusing on ethical AI development.",
       image: "/placeholder.svg?height=300&width=300",
-      achievement: "Published research paper on game theory AI",
-      skills: ["Python", "Machine Learning", "Algorithms"],
-    },
-    {
-      id: 5,
-      name: "Mehdi Chakir",
-      title: "DevOps Engineer",
-      company: "OCP Group",
-      category: "career",
-      story:
-        "Mehdi's expertise in system programming and Docker from 1337 led to a DevOps role at OCP Group, where he now manages cloud infrastructure for mining operations.",
-      image: "/placeholder.svg?height=300&width=300",
-      achievement: "Reduced deployment time by 70%",
-      skills: ["Docker", "Kubernetes", "System Programming"],
-    },
-    {
-      id: 6,
-      name: "Nadia Benjelloun",
-      title: "Game Developer",
-      company: "Indie Game Studio",
-      category: "startup",
-      story:
-        "Inspired by creating 1337run during her studies, Nadia co-founded an indie game studio. Their first mobile game has over 500K downloads.",
-      image: "/placeholder.svg?height=300&width=300",
-      achievement: "Game featured on App Store",
-      skills: ["OpenGL", "Game Design", "Mobile Development"],
-    },
+      achievement: "Published novel transformer architecture at NeurIPS conference",
+      skills: ["Machine Learning", "Python", "TensorFlow", "Algorithm Design"],
+      source: "https://youtu.be/6-XlNySUMDk"
+    }
   ]
 
   const categories = [

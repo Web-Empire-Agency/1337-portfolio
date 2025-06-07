@@ -356,7 +356,7 @@ export default function AdmissionsTimeline() {
           <div className="bg-gradient-to-br from-[#0a192f]/80 to-[#020c1b]/80 backdrop-blur-sm rounded-2xl border border-bg-primary-20 p-6 hover:border-bg-primary-40 transition-colors">
             <div className="text-center space-y-4">
               <div className="inline-flex items-center justify-center w-16 h-16 bg-bg-primary-10 rounded-full border border-bg-primary-30">
-                <div className="text-2xl font-mono font-bold text-primary">0</div>
+                <div className="text-2xl font-mono font-bold text-primary">0$</div>
               </div>
               <h3 className="text-xl font-mono font-semibold text-text">{t.admissions.keyInfo.tuition.title}</h3>
               <p className="text-text/70 text-sm leading-relaxed">{t.admissions.keyInfo.tuition.description}</p>

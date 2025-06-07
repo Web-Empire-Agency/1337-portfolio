@@ -1,54 +1,33 @@
 "use client"
 
-import { useState, useRef } from "react"
+import { useState } from "react"
 import { ChevronLeft, ChevronRight, Play, Quote } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useLanguage } from "@/lib/language-context"
+import { TestimonialStudent } from "@/lib/content"
+import Image from "next/image"
+import VideoPlayer from "@/components/video-player"
 
 export default function TestimonialCarousel() {
   const [activeIndex, setActiveIndex] = useState(0)
-  const videoRef = useRef<HTMLVideoElement>(null)
-  const [isPlaying, setIsPlaying] = useState(false)
   const { t } = useLanguage()
 
-  const testimonials = t.testimonials.students.map((student, index) => ({
+  const testimonials = t.testimonials.students.map((student: TestimonialStudent, index) => ({
     id: index + 1,
     name: student.name,
     role: student.role,
     quote: student.quote,
     image: "/placeholder.svg?height=400&width=400",
     videoThumbnail: "/placeholder.svg?height=720&width=1280",
+    videoUrl: student.videoUrl || "",
   }))
 
   const nextTestimonial = () => {
     setActiveIndex((prevIndex) => (prevIndex + 1) % testimonials.length)
-    if (isPlaying) {
-      setIsPlaying(false)
-      if (videoRef.current) {
-        videoRef.current.pause()
-      }
-    }
   }
 
   const prevTestimonial = () => {
     setActiveIndex((prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length)
-    if (isPlaying) {
-      setIsPlaying(false)
-      if (videoRef.current) {
-        videoRef.current.pause()
-      }
-    }
-  }
-
-  const toggleVideo = () => {
-    if (videoRef.current) {
-      if (isPlaying) {
-        videoRef.current.pause()
-      } else {
-        videoRef.current.play()
-      }
-      setIsPlaying(!isPlaying)
-    }
   }
 
   return (
@@ -62,55 +41,29 @@ export default function TestimonialCarousel() {
         {/* Main Testimonial Display */}
         <div className="relative mb-16">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Video/Image Section */}
+            {/* Video Section */}
             <div className="relative">
-              <div className="relative rounded-3xl overflow-hidden border border-bg-primary-20 bg-gradient-to-br from-[#0a192f] to-[#020c1b]">
-                {/* Video Player */}
-                <div className="relative aspect-video">
-                  <img
-                    src={testimonials[activeIndex].videoThumbnail || "/placeholder.svg"}
-                    alt={`${testimonials[activeIndex].name} testimonial`}
-                    className="w-full h-full object-cover"
-                  />
-
-                  {/* Play Button Overlay */}
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <Button
-                      onClick={toggleVideo}
-                      size="lg"
-                      className="w-20 h-20 rounded-full bg-bg-primary-20 backdrop-blur-sm border border-[#00ff8c] text-primary hover:bg-bg-primary-30 hover:scale-110 transition-all duration-300"
-                    >
-                      <Play className="w-8 h-8 ml-1" />
-                    </Button>
-                  </div>
-
-                  {/* Terminal-style decorative elements */}
-                  <div className="absolute top-4 left-4 opacity-70">
-                    <div className="font-mono text-xs text-primary">{"> video.play()"}</div>
-                  </div>
-                  <div className="absolute top-4 right-4 opacity-70">
-                    <div className="flex space-x-1">
-                      <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-                      <div className="w-2 h-2 bg-yellow-500 rounded-full"></div>
-                      <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                    </div>
-                  </div>
-                </div>
+              <VideoPlayer
+                videoUrl={testimonials[activeIndex].videoUrl}
+                thumbnailUrl={testimonials[activeIndex].videoThumbnail}
+                altText={`${testimonials[activeIndex].name} testimonial`}
+              />
 
                 {/* Student Info Overlay */}
                 <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-[#020c1b] to-transparent">
                   <div className="flex items-center space-x-4">
                     <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-[#00ff8c]">
-                      <img
+                      <Image
                         src={testimonials[activeIndex].image || "/placeholder.svg"}
                         alt={testimonials[activeIndex].name}
-                        className="w-full h-full object-cover"
+                        width={48}
+                        height={48}
+                        className="object-cover"
                       />
                     </div>
                     <div>
                       <h3 className="font-mono font-bold text-primary">{testimonials[activeIndex].name}</h3>
                       <p className="text-text/70 text-sm">{testimonials[activeIndex].role}</p>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -121,7 +74,7 @@ export default function TestimonialCarousel() {
               <div className="relative">
                 <Quote className="w-12 h-12 text-primary/30 mb-6" />
                 <blockquote className="text-2xl md:text-3xl font-mono text-text leading-relaxed">
-                  "{testimonials[activeIndex].quote}"
+                  &quot;{testimonials[activeIndex].quote}&quot;
                 </blockquote>
                 <div className="absolute -top-4 -right-4 opacity-20">
                   <Quote className="w-24 h-24 text-primary transform rotate-180" />
@@ -130,10 +83,12 @@ export default function TestimonialCarousel() {
 
               <div className="flex items-center space-x-4">
                 <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-bg-primary-30">
-                  <img
+                  <Image
                     src={testimonials[activeIndex].image || "/placeholder.svg"}
                     alt={testimonials[activeIndex].name}
-                    className="w-full h-full object-cover"
+                    width={48}
+                    height={48}
+                    className="object-cover"
                   />
                 </div>
                 <div>
@@ -192,10 +147,12 @@ export default function TestimonialCarousel() {
             >
               <div className="flex items-center space-x-3 mb-4">
                 <div className="w-10 h-10 rounded-full overflow-hidden border border-bg-primary-30">
-                  <img
+                  <Image
                     src={testimonial.image || "/placeholder.svg"}
                     alt={testimonial.name}
-                    className="w-full h-full object-cover"
+                    width={40}
+                    height={40}
+                    className="object-cover"
                   />
                 </div>
                 <div>

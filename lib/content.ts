@@ -1,5 +1,12 @@
 export type Language = "en" | "fr" | "ar"
 
+export interface TestimonialStudent {
+  name: string
+  role: string
+  quote: string
+  videoUrl?: string
+}
+
 export const content = {
   en: {
     // Navigation
@@ -458,6 +465,7 @@ export const content = {
           role: "Student, Khouribga Campus",
           quote:
             "Coding means freedom to me. 1337 doesn't just teach solutions, it teaches the tools to solve any problem. The peer learning model pushed me to grow in ways traditional education never could.",
+          videoUrl: "/Aymane-HAMDI.mp4"
         },
         {
           name: "Amine",
@@ -476,6 +484,7 @@ export const content = {
           role: "Graduate, Khouribga Campus",
           quote:
             "The internship opportunities through 1337 connected me directly to the industry. I secured a position at a major tech company before even completing the program. The practical skills made all the difference.",
+          videoUrl: "",
         },
       ],
       successStories: {

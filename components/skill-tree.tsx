@@ -13,8 +13,8 @@ export default function SkillTree() {
     programming: {
       title: t.curriculum.pillars.programming.title,
       icon: Code,
-      color: "from-blue-500/20 to-cyan-500/20",
-      borderColor: "border-blue-500/30",
+      color: "from-[#020c1b]/80 to-[#0a192f]/80",
+      borderColor: "border-[#00ff8c]/20",
       skills: [
         {
           name: t.curriculum.pillars.programming.skills.imperative.name,
@@ -61,8 +61,8 @@ export default function SkillTree() {
     innovation: {
       title: t.curriculum.pillars.innovation.title,
       icon: Zap,
-      color: "from-purple-500/20 to-pink-500/20",
-      borderColor: "border-purple-500/30",
+      color: "from-[#020c1b]/80 to-[#0a192f]/80",
+      borderColor: "border-[#00ff8c]/20",
       skills: [
         {
           name: t.curriculum.pillars.innovation.skills.creativity.name,
@@ -93,8 +93,8 @@ export default function SkillTree() {
     infrastructure: {
       title: t.curriculum.pillars.infrastructure.title,
       icon: Shield,
-      color: "from-green-500/20 to-emerald-500/20",
-      borderColor: "border-green-500/30",
+      color: "from-[#020c1b]/80 to-[#0a192f]/80",
+      borderColor: "border-[#00ff8c]/20",
       skills: [
         {
           name: t.curriculum.pillars.infrastructure.skills.system.name,
@@ -194,7 +194,7 @@ export default function SkillTree() {
                 return (
                   <div
                     key={index}
-                    className="group relative bg-primary-light/50 rounded-2xl border border-bg-primary-20 hover:border-[#00ff8c]/60 p-6 transition-all duration-500 hover:transform hover:scale-105"
+                    className="group relative bg-[#020c1b]/50 rounded-2xl border border-[#00ff8c]/20 hover:border-[#00ff8c]/60 p-6 transition-all duration-500 hover:transform hover:scale-105"
                   >
                     {/* Level Indicator */}
                     <div className="absolute -top-3 -right-3 w-8 h-8 bg-[#00ff8c] text-[#020c1b] rounded-full flex items-center justify-center font-mono font-bold text-sm">
@@ -249,7 +249,7 @@ export default function SkillTree() {
             </div>
 
             {/* Internship Info */}
-            <div className="mt-12 p-6 bg-primary-dark/50 rounded-2xl border border-bg-primary-20">
+            <div className="mt-12 p-6 bg-[#020c1b]/50 rounded-2xl border border-[#00ff8c]/20">
               <div className="text-center space-y-4">
                 <h3 className="text-xl font-mono font-bold text-text">{t.curriculum.internships.title}</h3>
                 <p className="text-text/70 max-w-2xl mx-auto">{t.curriculum.internships.description}</p>
