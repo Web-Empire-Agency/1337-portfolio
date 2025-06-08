@@ -2,13 +2,11 @@
   "name": "1337-portfolio",
   "version": "0.1.0",
   "private": true,
-  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "generate-thumbnails": "node scripts/generate-thumbnails.js"
+    "lint": "next lint"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.3",
@@ -19,8 +17,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "tailwind-merge": "^3.3.0",
-    "tailwindcss-animate": "^1.0.7",
-    "vercel": "^42.3.0"
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@types/node": "^20",

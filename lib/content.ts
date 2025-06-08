@@ -262,6 +262,7 @@ export const content = {
           khouribga: "Khouribga Campus",
           benguerir: "Ben Guerir Campus",
           tetouan: "Tétouan Campus",
+          rabat: "Rabat Campus",
         },
       },
       overview: {
@@ -791,6 +792,7 @@ export const content = {
           khouribga: "Campus Khouribga",
           benguerir: "Campus Ben Guerir",
           tetouan: "Campus Tétouan",
+          rabat: "Campus Rabat",
         },
       },
       overview: {
@@ -1315,6 +1317,7 @@ export const content = {
           khouribga: "حرم خريبكة",
           benguerir: "حرم بن جرير",
           tetouan: "حرم تطوان",
+          rabat: "حرم الرباط",
         },
       },
       overview: {

@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useRef } from "react"
+import { useState, useRef, useEffect } from "react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useLanguage } from "@/lib/language-context"
@@ -11,6 +11,16 @@ export default function CampusGallery() {
   const [activeTab, setActiveTab] = useState("khouribga")
   const scrollContainerRef = useRef<HTMLDivElement>(null)
   const { t } = useLanguage()
+
+  // Reset scroll position when activeTab changes
+  useEffect(() => {
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.scrollTo({
+        left: 0,
+        behavior: "smooth"
+      })
+    }
+  }, [activeTab])
 
   const campusImages = {
     khouribga: [
@@ -131,7 +141,11 @@ export default function CampusGallery() {
                 ? t.campuses.gallery.campusLabels.khouribga
                 : id === "benguerir"
                   ? t.campuses.gallery.campusLabels.benguerir
-                  : t.campuses.gallery.campusLabels.tetouan}
+                  : id === "tetouan"
+                    ? t.campuses.gallery.campusLabels.tetouan
+                    : id === "rabat"
+                      ? t.campuses.gallery.campusLabels.rabat
+                      : "there is no campus"}
             </Button>
           ))}
         </div>
@@ -143,7 +157,7 @@ export default function CampusGallery() {
             <Button
               variant="outline"
               size="icon"
-              className="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 bg-primary-dark/80 border-bg-primary-30 text-primary hover:bg-bg-primary-10 hover:border-[#00ff8c]"
+              className="absolute left-4 top-1/2 transform -translate-y-1/2 z-20 bg-primary-dark/80 border-bg-primary-30 text-primary hover:bg-bg-primary-10 hover:border-[#00ff8c] cursor-pointer"
               onClick={() => scroll("left")}
             >
               <ChevronLeft className="h-6 w-6" />
@@ -151,7 +165,7 @@ export default function CampusGallery() {
             <Button
               variant="outline"
               size="icon"
-              className="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 bg-primary-dark/80 border-bg-primary-30 text-primary hover:bg-bg-primary-10 hover:border-[#00ff8c]"
+              className="absolute right-4 top-1/2 transform -translate-y-1/2 z-20 bg-primary-dark/80 border-bg-primary-30 text-primary hover:bg-bg-primary-10 hover:border-[#00ff8c] cursor-pointer"
               onClick={() => scroll("right")}
             >
               <ChevronRight className="h-6 w-6" />
@@ -160,8 +174,13 @@ export default function CampusGallery() {
             {/* Gallery Images */}
             <div
               ref={scrollContainerRef}
-              className="flex overflow-x-auto snap-x snap-mandatory h-full hide-scrollbar"
-              style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+              className="flex overflow-x-auto snap-x snap-mandatory h-full hide-scrollbar scroll-smooth"
+              style={{ 
+                scrollbarWidth: "none", 
+                msOverflowStyle: "none",
+                WebkitOverflowScrolling: "touch",
+                scrollBehavior: "smooth"
+              }}
             >
               {campusImages[activeTab as keyof typeof campusImages].map((image, index) => (
                 <div

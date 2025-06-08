@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react"
 import { Button } from "@/components/ui/button"
 import { ChevronRight, Terminal, Users, Globe } from "lucide-react"
+import Link from "next/link"
 import { useLanguage } from "@/lib/language-context"
 
 export default function Hero() {
@@ -98,15 +99,20 @@ export default function Hero() {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button className="bg-[#00ff8c] text-[#020c1b] hover:bg-bg-primary-90 font-mono font-semibold px-8 py-3 text-lg group">
-              {t.hero.ctaPrimary}
-              <ChevronRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              <Link href="https://1337.ma/en/legal-notice-and-general-conditions" className="flex items-center" target="_blank">
+                {t.hero.ctaPrimary}
+                <ChevronRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </Link>
             </Button>
 
             <Button
               variant="outline"
               className="border-[#00ff8c] text-primary hover:bg-bg-primary-10 font-mono font-semibold px-8 py-3 text-lg"
             >
-              {t.hero.ctaSecondary}
+              <Link href="https://1337.ma/en/legal-notice-and-general-conditions" className="flex items-center" target="_blank">
+                {t.hero.ctaSecondary}
+                <ChevronRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </Link>
             </Button>
           </div>
 
