@@ -83,7 +83,7 @@ export default function Hero() {
           {/* Stats */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             <div className="text-center space-y-2">
-              <div className="text-3xl md:text-4xl font-mono font-bold text-primary">3</div>
+              <div className="text-3xl md:text-4xl font-mono font-bold text-primary">4</div>
               <div className="text-text/80">{t.hero.stats.campuses}</div>
             </div>
             <div className="text-center space-y-2">
